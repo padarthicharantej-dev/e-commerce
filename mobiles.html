@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+   
+  <link rel="stylesheet"  href="style.css"> 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="user-display"></div>
+
+        <h1>🛍️ MyShop</h1>
+        <div class="header-right">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="watches.html">watches</a>
+                <a href="sports.html">sports</a>
+                <a href="mobiles.html">mobiles</a>
+                <a href="cart.html">🛒Cart</a>
+            </nav>
+            <button id="login-btn" class="login-btn" onclick="location.href='login.html'">Login</button>
+        </div>
+    </header>
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Apple</h3>  
+                <img  class="img-thumbnail"  width="304" height="236" src="smartphone.jpeg" height="200" width="200" alt="Product 1">
+                <p>Price: $899.99</p>
+                 <button class="btn btn-success" onclick="addToCart('Apple', 899.99)">Add to Cart</button>
+                
+            </div>
+            <div class="product-item">
+                <h3>Samsung</h3>
+                <img class="img-thumbnail"  width="304" height="236"src="samsung.jpeg" height="200" width="200" alt="Product 2">
+                <p>Price: $899.99</p>
+                 <button class="btn btn-success" onclick="addToCart('Samsung', 899.99)">Add to Cart</button>
+                
+            </div>
+            <div class="product-item">
+                <h3>OnePlus</h3>
+                <img class="img-thumbnail"  width="304" height="236" src="oneplus.jpeg" height="200" width="200" alt="Product 3">
+                <p>Price: $399.99</p>
+                                <button class="btn btn-success" onclick="addToCart('OnePlus', 399.99)">Add to Cart</button>
+            </div>
+              <div class="product-item">
+                <h3>realme</h3>
+                <img class="img-thumbnail"  width="304" height="236" src="realme.jpeg" height="200" width="200" alt="Product 3">
+                <p>Price: $299.99</p>
+                                <button class="btn btn-success" onclick="addToCart('realme', 299.99)">Add to Cart</button>
+            </div>
+             
+              <div class="product-item">
+                <h3>Vivo</h3>
+                <img class="img-thumbnail"  width="304" height="236" src="vivo.jpeg" height="200" width="200" alt="Product 3">
+                <p>Price: $599.99</p>
+                 <button class="btn btn-success" onclick="addToCart('Vivo', 599.99)">Add to Cart</button>
+            </div>
+              
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
