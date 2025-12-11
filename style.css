@@ -8,15 +8,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121217;
-    color: #e0e0e0;
+    background-color: red;
+    color: green;
     line-height: 1.5;
     min-height: 100vh;
 }
 
 
 header {
-    background-color: #1f1f2e;
+    background-color: yellow;
     color: #bbb;
     padding: 20px 30px;
     display: flex;
@@ -30,7 +30,7 @@ header {
 }
 
 nav a {
-    color: #bbb;
+    color: #bbl;
     margin: 0 18px;
     font-size: 16px;
     font-weight: 400;
@@ -41,7 +41,7 @@ nav a {
 
 nav a:hover {
     border-bottom: 2px solid #61dafb;
-    color: #61dafb;
+    color: green;
 }
 
 .header-right {
@@ -86,7 +86,7 @@ nav a:hover {
 .btn {
     background-color: transparent;
     border: 2px solid #61dafb;
-    color: #61dafb;
+    color: orange;
     padding: 14px 28px;
     font-size: 17px;
     border-radius: 50px;
@@ -96,7 +96,7 @@ nav a:hover {
 }
 
 .btn:hover {
-    background-color: #61dafb;
+    background-color: blue;
     color: #121217;
     transform: scale(1.05);
 }
@@ -161,7 +161,7 @@ nav a:hover {
 .cart {
     max-width: 700px;
     margin: 60px auto;
-    background-color: #1f1f2e;
+    background-color: white;
     padding: 40px 30px;
     border-radius: 24px;
     box-shadow: 0 6px 24px rgba(97, 218, 251, 0.15);
