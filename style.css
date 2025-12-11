@@ -1,157 +1,197 @@
 
-body{
-    border: 0;
-    font-family: franklin gothic medium, sans-serif;
-    background-color: whitesmoke;
-    color: #111;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    font-family: "Inter", Arial, sans-serif;
+    background: #f4f7fa;
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+
+
 header{
-    background-color:black;
-    color: white;
-    padding: 15px 20px;
+    background: white;
+    color: #222;
+    padding: 18px 24px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 nav a{
-    color:white;
-    margin:0px 12px;
+    color:#333;
+    margin:0px 15px;
     text-decoration:none;
     font-size: 15px;
+    font-weight: 500;
+    transition: color .2s ease;
 }
 
-.header-right{ display:flex; align-items:center; gap:12px; margin-left:auto; }
-.header-right nav{ display:flex; gap:12px; }
-.login-btn{ background: transparent; color: white; border: 1px solid rgba(255,255,255,0.18); padding:6px 10px; border-radius:4px; cursor:pointer; }
-.login-btn:hover{ background: rgba(255,255,255,0.06); }
-
-#user-display{ color: white; font-weight:600; margin-right:12px; }
-
-footer{
-    background-color: black;
-    color:white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+nav a:hover{
+    color:#0077ff;
 }
+
+.header-right{ 
+    display:flex; 
+    align-items:center; 
+    gap:15px;
+}
+
+.login-btn{
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background .2s ease;
+}
+
+.login-btn:hover{
+    background:#005fcc;
+}
+
+#user-display{
+    position: relative;
+    right: 0;
+    color:#0077ff;
+    font-weight:600;
+    font-size: 16px;
+}
+
 
 .main{
-    background-color: rgb(11, 80, 103);
+    background: linear-gradient(135deg, #0077ff, #00b6ff);
     color:white;
-    padding: 50px;
-    padding-bottom: 120px;
-    box-sizing: border-box;
+    padding: 70px 40px;
     text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .btn{
-    background-color: black;
-    display:inline-block;
-    color:white;
-    padding: 10px 20px;
+    background-color: white;
+    color:#0077ff;
+    padding: 12px 22px;
     text-decoration:none;
-    font-size: 15px;
-    border-radius:5px;
+    font-size: 16px;
+    border-radius:8px;
+    font-weight: 600;
     cursor:pointer;
-    transition: background-color 150ms ease;
+    transition: transform .15s ease, background-color .15s ease;
+}
+
+.btn:hover{
+    background: #eaf3ff;
+    transform: translateY(-3px);
 }
 
 
 
-
-.products {
-    padding: 30px 20px;
+.products{
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
-.product-list {
+
+.product-list{
     display: flex;
-    gap: 24px;
+    gap: 28px;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
 }
-.product-item {
+
+.product-item{
     background: white;
-    padding: 16px;
-    border-radius: 8px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
-    min-height: 320px; 
+    padding: 20px;
+    border-radius: 12px;
+    width: 240px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
 }
-.product-item img {
+
+.product-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-item img{
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 12px; 
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-.product-item button:not(.btn) {
-    background-color: #ff77aa; 
+
+.product-item button:not(.btn){
+    background-color: #0077ff; 
     color: #ffffff;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 14px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 150ms ease;
-    margin-top: 12px; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-    display: inline-block;
+    width: 100%;
+    transition: background .2s ease;
 }
-.product-item button:not(.btn):hover {
-    background-color: #ff4f8f;
+
+.product-item button:not(.btn):hover{
+    background-color: #005fcc;
 }
 
 
-.cart {
+.cart{
     max-width: 900px;
-    margin: 40px auto; 
-    background-color: rgb(192, 204, 208);
+    margin: 50px auto; 
+    background-color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-@media (max-width: 520px) {
-    .product-item {
-        width: 100%;
-    }
-    header { justify-content: center; }
-}
+
 .choose{
-    margin: 30px;
+    margin: 40px auto;
     font-size: 18px;
     text-align: center;
-    list-style-type: none;
-    color: black;
-    background-color: yellow;
+    color: #222;
+    background-color: #fff8b3;
     padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width:80%;
-    border-radius: 12px;
-    gap: 20px;
+    width: 80%;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
-.choose ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; }
-.choose ul li{ width:100%; }
-#user-display{
-    color: white;
-    font-size: 16px;
-    margin-right: 20px;
-    top:20px;
-    position:absolute;
-    right: 20px;
-    font-weight: bold;
+.choose ul{
+    list-style:none; 
+    padding:0; 
+    display:flex; 
+    flex-direction:column; 
+    gap:15px; 
+}
+
+.choose ul li{
+    width:100%;
 }
 
 
- 
+footer{
+    background-color: #111;
+    color:white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 520px){
+    .product-item{ width: 100%; }
+    header{ flex-direction: column; gap: 12px; }
+}
